@@ -64,7 +64,7 @@ Add 5-10 screenshots from successful apps to `/inspiration` folder:
 **What it does:**
 - Combines insights from competitor analysis
 - Adapts colors, typography, components for YOUR app concept
-- Creates `/generated/final-design-system.md` - your custom style guide
+- Creates `/generated/styles.md` - your custom style guide
 
 ### Step 5: Generate UI Components
 ```bash
@@ -94,7 +94,7 @@ Instead of **randomly copying designs**, you're:
 |---------|-------------|----------------|
 | `/extract-it "app description"` | After adding inspiration images | `/generated/competitor-analysis.md` |
 | `/expand-it` | Want deeper design philosophy | Appends to `/generated/competitor-analysis.md` |
-| `/merge-it "specific app concept"` | Ready to create unified system | `/generated/final-design-system.md` |
+| `/merge-it "specific app concept"` | Ready to create unified system | `/generated/styles.md` |
 | `/design-it "screen description"` | Need actual UI components | React components in `/generated/screens/` |
 
 ## Typical Workflows

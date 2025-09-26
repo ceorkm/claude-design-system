@@ -32,10 +32,10 @@ Include:
 - **Philosophy Statement**: What this design system represents for the user's brand
 
 ## Output:
-Save to `/generated/final-design-system.md`:
+Save to `/generated/styles.md`:
 - App-specific design philosophy
 - Complete style guide (colors, typography, components)
 - Implementation guidelines
 - Usage examples for common app screens
 
-This becomes the blueprint for generating actual UI components with `/design-it`.
+This `styles.md` file becomes the blueprint for `/design-it` to generate actual UI components.

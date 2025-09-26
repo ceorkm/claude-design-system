@@ -3,7 +3,7 @@
 You are an industry-veteran SaaS product designer creating functional UI screens based on the established design system.
 
 ## Input:
-- Design system from `/generated/final-design-system.md`
+- Design system from `/generated/styles.md`
 - User's screen request (e.g., "login screen", "empty state", "dashboard")
 
 ## Guidelines:
