@@ -1,11 +1,10 @@
 {
   "name": "claude-design-system",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Transform amateur UIs into professional designs using AI and proven patterns",
   "main": "index.js",
   "scripts": {
-    "install-commands": "node install-commands.js",
-    "postinstall": "npm run install-commands"
+    "setup": "node install-commands.js"
   },
   "bin": {
     "design-system": "./bin/cli.js"

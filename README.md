@@ -20,7 +20,7 @@ Professional designers don't create from scratch - they study what works.
 
 ```bash
 npm install claude-design-system
-# Auto-creates folders and installs commands to ~/.claude/commands
+npx claude-design-system
 ```
 
 Add 5-10 screenshots from successful apps to `/inspiration` folder:
