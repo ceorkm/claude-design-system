@@ -8,8 +8,9 @@ async function setup() {
   try {
     console.log('🎨 Setting up Claude Design System...');
 
-    const homeDir = os.homedir();
-    const claudeDir = path.join(homeDir, '.claude');
+    // Create .claude/commands in project directory
+    const currentDir = process.cwd();
+    const claudeDir = path.join(currentDir, '.claude');
     const commandsDir = path.join(claudeDir, 'commands');
 
     // Create .claude/commands directory
@@ -35,7 +36,6 @@ async function setup() {
     }
 
     // Create project folders
-    const currentDir = process.cwd();
     const inspirationDir = path.join(currentDir, 'inspiration');
     const generatedDir = path.join(currentDir, 'generated');
 
@@ -70,7 +70,7 @@ Ready to build professional UIs! 🚀
 
     console.log('✅ Setup complete!');
     console.log('📁 Created: /inspiration and /generated folders');
-    console.log('📚 Commands installed to ~/.claude/commands');
+    console.log('📚 Commands installed to ./.claude/commands');
     console.log('📖 Instructions saved to DESIGN-SYSTEM.md');
     console.log('');
     console.log('🚀 Ready! Add images to /inspiration then run:');
