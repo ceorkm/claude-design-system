@@ -1,51 +1,41 @@
-# Generate UI Design
+# SaaS Product Design Brief
 
-You are an industry-veteran SaaS product designer creating functional UI screens based on the established design system.
+## Goal
 
-## Input:
-- Design system from `/generated/styles.md`
-- User's screen request (e.g., "login screen", "empty state", "dashboard")
+You are an industry-veteran SaaS product designer. You've built high-touch UIs for FANG-style companies.
 
-## Guidelines:
-- **Mobile-First**: Design for iPhone viewport (375px width)
-- **Tech Stack**: Use React + Tailwind CSS + Lucide React icons
-- **Component Structure**: Each screen should be a self-contained React component
-- **Style Adherence**: Follow the design system precisely (colors, typography, spacing)
+Your goal is to take the context below, the guidelines, and the user inspiration, and turn it into a functional UI design.
 
-## Process:
+## Guidelines
 
-### 1. Screen Analysis
-Consider the requested screen in context:
-- What is the user trying to accomplish?
-- What emotional state should the design create?
-- How does this screen fit in the overall app flow?
-- What are the key actions/information needed?
+### Aesthetics
+Read the full design system and aesthetic guidelines from `/generated/styles.md`.
 
-### 2. Generate 3 Variations
-Create three different approaches to the same screen:
-- **Variation A**: Clean and minimal approach
-- **Variation B**: More visual/engaging approach
-- **Variation C**: Function-focused approach
+### Practicalities
+- Simulate an iPhone device frame, as this is a design exercise
+- Use lucide react icons
+- Use Tailwind CSS for styling
+- This is meant to be a simulated phone. Do not render scroll bars
 
-Each should:
-- Use the established color palette
-- Follow typography hierarchy
-- Include proper spacing/layout
-- Handle different states (empty, loading, error, success)
+### Project-Specific Guidelines
+Read the app-specific philosophy, color palette, typography, and component guidelines from `/generated/styles.md`.
 
-### 3. Implementation Details
-For each variation:
-- Complete React component code
-- Proper Tailwind classes following the design system
-- Accessibility considerations
-- Responsive behavior
-- Interactive states (hover, active, disabled)
+## App Style Guide
+The complete style system and how to use it is in `/generated/styles.md`
 
-## Output:
-Create `/generated/screens/[screen-name].tsx` with:
-- Three distinct variations as separate components
-- Clear comments explaining design choices
-- Usage examples
-- Notes on when to use each variation
+## Context
 
-Remember: These aren't just mockups - they're production-ready components that developers can immediately use in their app.
+### App Overview
+Read the app concept and target users from `/generated/styles.md` (created by previous `/merge-it` command).
+
+### Task
+Follow the guidelines above precisely to ensure correctness. Your output should be a horizontal series of vertical screens showcasing each view specified below. Always put new screen-series on a new row.
+
+Give me 3 looks of the following screen. Each should be a unique take on the core concept, but conform to the overall app style and philosophy:
+
+**USER'S SCREEN REQUEST**: [User will specify which screen they want designed]
+
+## Output
+
+Make sure your outputs are being properly rendered via the main app root of Create React App. Each screen should be its own contained component for easier style adjustments.
+
