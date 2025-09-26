@@ -1,11 +1,11 @@
 # Merge Design System
 
-Take the expanded analysis from `/generated/styles.md` and fuse it with the user's specific app concept to create a unified design system.
+Take the expanded analysis from `/generated/competitor-analysis.md` and fuse it with the user's specific app concept to create a unified design system.
 
 ## Input:
 - User's app concept (from their command message)
 - Target users and desired emotions
-- Expanded competitor analysis with philosophy and implementation guidance
+- Expanded competitor analysis from `/generated/competitor-analysis.md` (created by `/extract-it` and optionally enhanced by `/expand-it`)
 
 ## Process:
 

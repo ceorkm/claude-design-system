@@ -53,7 +53,7 @@ Add 5-10 screenshots from successful apps to `/inspiration` folder:
 **What it does:** Reads competitor analysis and adds:
 - **Philosophy sections** - Core design beliefs and emotional targets
 - **How To Leverage** - Actionable implementation guidance
-- Saves expanded analysis to `/generated/styles.md`
+- **Appends to** `/generated/competitor-analysis.md` (doesn't create new file)
 
 ### Step 4B: Merge with Your App (Recommended)
 ```bash
@@ -93,7 +93,7 @@ Instead of **randomly copying designs**, you're:
 | Command | When To Use | What It Creates |
 |---------|-------------|----------------|
 | `/extract-it "app description"` | After adding inspiration images | `/generated/competitor-analysis.md` |
-| `/expand-it` | Want deeper design philosophy | `/generated/styles.md` |
+| `/expand-it` | Want deeper design philosophy | Appends to `/generated/competitor-analysis.md` |
 | `/merge-it "specific app concept"` | Ready to create unified system | `/generated/final-design-system.md` |
 | `/design-it "screen description"` | Need actual UI components | React components in `/generated/screens/` |
 

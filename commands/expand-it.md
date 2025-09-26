@@ -27,10 +27,11 @@ For each style guide, provide:
 - **User Experience**: How do these choices create better user experiences?
 
 ## Output:
-Save the expanded analysis to `/generated/styles.md` with:
-- Original competitor analysis
-- Philosophy sections for each app
-- How To Leverage guides for each style system
-- Synthesis insights for cross-platform design principles
+**APPEND to the existing `/generated/competitor-analysis.md` file** with:
 
-This becomes the foundation for merging insights with the user's specific app concept.
+1. **Keep all original analysis** (color palettes, typography, components, pondering tags)
+2. **Add Philosophy sections** for each analyzed app
+3. **Add How To Leverage sections** for each style guide
+4. **Add Cross-App Synthesis** insights
+
+The expanded competitor-analysis.md becomes the foundation for `/merge-it` to create the final design system.
