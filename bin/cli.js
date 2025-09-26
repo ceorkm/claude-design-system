@@ -17,12 +17,19 @@ async function setup() {
       fs.mkdirSync(commandsDir, { recursive: true });
     }
 
-    // Copy commands from node_modules
-    const nodeModulesPath = path.join(__dirname, '..', 'commands');
-    const commands = fs.readdirSync(nodeModulesPath);
+    // Copy commands from the installed package
+    const commandsPath = path.join(__dirname, '..', 'commands');
+
+    if (!fs.existsSync(commandsPath)) {
+      console.error('❌ Commands directory not found at:', commandsPath);
+      console.error('Package may be corrupted. Try reinstalling.');
+      process.exit(1);
+    }
+
+    const commands = fs.readdirSync(commandsPath);
 
     for (const command of commands) {
-      const src = path.join(nodeModulesPath, command);
+      const src = path.join(commandsPath, command);
       const dest = path.join(commandsDir, command);
       fs.copyFileSync(src, dest);
     }
